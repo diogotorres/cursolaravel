@@ -1,0 +1,44 @@
+1. Apagar o VUE
+package.json
+apagar o vue
+
+depois
+
+resources/js/app.js
+apagar o vue
+
+2. Limpar o estilo
+resources/sass/variables.scss
+apagar tudo
+
+3. Instalar o npm (bootstrap)
+no CMD, digitar:
+
+npm install
+
+depois
+
+npm run dev
+
+
+----------------------------------------------
+
+Criando o banco
+
+1. Criando os modelos e o migrate
+php artisan make:model NomeDaTabela -m
+
+2. Abrir os migrations e criar os campos adicionais da tabela
+
+3. Configurar o arquivo .env
+
+configurar o nome do banco, o usuario e a senha
+
+4. Fazer a migração
+php artisan migrate:fresh
+
+--------------------------------------------------
+
+Criando os controladores
+
+1. php artisan make:controller NomeDoControlador --resource

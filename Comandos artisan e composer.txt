@@ -1,0 +1,48 @@
+Criar novo projeto:
+composer create-project --prefer-dist laravel/laravel nomeDoProjeto
+
+Listar todas as rotas do projeto:
+php artisan route:list
+
+Criar um webserver provisorio para o projeto:
+php artisan serve
+
+Criar um controlador
+php artisan make:controller NomeDoController
+
+Criar um controlador com recursos
+php artisan make:controller NomeDoController --resources
+
+Instalar o bootstrap 4 no projeto
+npm install
+npm run dev
+
+Criar uma migration
+php artisan make:migration nome_da_migration
+
+Criar uma migration com um template de criar tabela
+php artisan make:migration nome_da_migration --create=nome_da_tabela
+
+Executar a migration
+php artisan migrate
+
+Desfazer a migration
+php artisan migrate:rollback
+
+Criar uma migration com um template de inserir campos na tabela
+php artisan make:migration nome_da_migration --table=nome_da_tabela
+
+Resetar e refazer as migrações - apaga todas as tabelas e refaz todos os migrates
+php artisan migrate:fresh
+
+Semear uma base de dados (depois de ja ter criado as calasses Seeders)
+php artisan db:seed
+
+Resetar as migrações - apaga todas as tabelas
+php artisan migrate:reset
+
+Criar modelo de banco de dados
+php artisan make:model NomeDoModelo
+
+Criar modelo de banco de dados + migration
+php artisan make:model NomeDoModelo -m
